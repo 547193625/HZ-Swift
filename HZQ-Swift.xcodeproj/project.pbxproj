@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5134D51722F2CE8400CA14CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D51622F2CE8400CA14CF /* AppDelegate.swift */; };
+		5134D51922F2CE8400CA14CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D51822F2CE8400CA14CF /* ViewController.swift */; };
+		5134D51C22F2CE8400CA14CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134D51A22F2CE8400CA14CF /* Main.storyboard */; };
+		5134D51E22F2CE8500CA14CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134D51D22F2CE8500CA14CF /* Assets.xcassets */; };
+		5134D52122F2CE8500CA14CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134D51F22F2CE8500CA14CF /* LaunchScreen.storyboard */; };
+		5134D52C22F2CE8500CA14CF /* HZQ_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D52B22F2CE8500CA14CF /* HZQ_SwiftTests.swift */; };
+		5134D53722F2CE8500CA14CF /* HZQ_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D53622F2CE8500CA14CF /* HZQ_SwiftUITests.swift */; };
+		5134D55122F2D7E000CA14CF /* HZFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D55022F2D7E000CA14CF /* HZFindViewController.swift */; };
+		5134D55322F2D80400CA14CF /* HZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D55222F2D80400CA14CF /* HZHomeViewController.swift */; };
+		5134D55522F2D81C00CA14CF /* HZListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D55422F2D81C00CA14CF /* HZListenViewController.swift */; };
+		5134D55722F2D82500CA14CF /* HZMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D55622F2D82500CA14CF /* HZMineViewController.swift */; };
+		5134D55922F2D83600CA14CF /* HZPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D55822F2D83600CA14CF /* HZPlayViewController.swift */; };
+		5134D59122F2DEE300CA14CF /* HZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59022F2DEE300CA14CF /* HZNavigationController.swift */; };
+		5134D59F22F2DF0300CA14CF /* LBFMCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59322F2DF0200CA14CF /* LBFMCustomLabel.swift */; };
+		5134D5A022F2DF0300CA14CF /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59522F2DF0200CA14CF /* WRNavigationBar.swift */; };
+		5134D5A122F2DF0300CA14CF /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59622F2DF0200CA14CF /* WRCustomNavigationBar.swift */; };
+		5134D5A222F2DF0300CA14CF /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59822F2DF0200CA14CF /* WRProxy.swift */; };
+		5134D5A322F2DF0300CA14CF /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59922F2DF0200CA14CF /* WRCycleScrollView.swift */; };
+		5134D5A422F2DF0300CA14CF /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59A22F2DF0200CA14CF /* WRCycleCell.swift */; };
+		5134D5A522F2DF0300CA14CF /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59C22F2DF0200CA14CF /* URefresh.swift */; };
+		5134D5A622F2DF0300CA14CF /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D59E22F2DF0200CA14CF /* ReplicatorLayer.swift */; };
+		5134D5A822F2DF7C00CA14CF /* HZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5A722F2DF7C00CA14CF /* HZHeader.swift */; };
+		5134D5AA22F2E1A600CA14CF /* HZBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5A922F2E1A600CA14CF /* HZBasicContentView.swift */; };
+		5134D5AC22F2E20100CA14CF /* HZBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5AB22F2E20100CA14CF /* HZBouncesContentView.swift */; };
+		5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5AD22F2E29300CA14CF /* HZIrregularityBasicContentView.swift */; };
+		A78339745B362C01D8CF2114 /* Pods_HZQ_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5134D52822F2CE8500CA14CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5134D50B22F2CE8400CA14CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5134D51222F2CE8400CA14CF;
+			remoteInfo = "HZQ-Swift";
+		};
+		5134D53322F2CE8500CA14CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5134D50B22F2CE8400CA14CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5134D51222F2CE8400CA14CF;
+			remoteInfo = "HZQ-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HZQ_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B143BEF488C71844A2675B /* Pods-HZQ-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZQ-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		5134D51322F2CE8400CA14CF /* HZQ-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HZQ-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5134D51622F2CE8400CA14CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5134D51822F2CE8400CA14CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5134D51B22F2CE8400CA14CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5134D51D22F2CE8500CA14CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5134D52022F2CE8500CA14CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5134D52222F2CE8500CA14CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5134D52722F2CE8500CA14CF /* HZQ-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HZQ-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5134D52B22F2CE8500CA14CF /* HZQ_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZQ_SwiftTests.swift; sourceTree = "<group>"; };
+		5134D52D22F2CE8500CA14CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5134D53222F2CE8500CA14CF /* HZQ-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HZQ-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5134D53622F2CE8500CA14CF /* HZQ_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZQ_SwiftUITests.swift; sourceTree = "<group>"; };
+		5134D53822F2CE8500CA14CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5134D55022F2D7E000CA14CF /* HZFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindViewController.swift; sourceTree = "<group>"; };
+		5134D55222F2D80400CA14CF /* HZHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeViewController.swift; sourceTree = "<group>"; };
+		5134D55422F2D81C00CA14CF /* HZListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenViewController.swift; sourceTree = "<group>"; };
+		5134D55622F2D82500CA14CF /* HZMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZMineViewController.swift; sourceTree = "<group>"; };
+		5134D55822F2D83600CA14CF /* HZPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZPlayViewController.swift; sourceTree = "<group>"; };
+		5134D59022F2DEE300CA14CF /* HZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZNavigationController.swift; sourceTree = "<group>"; };
+		5134D59322F2DF0200CA14CF /* LBFMCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBFMCustomLabel.swift; sourceTree = "<group>"; };
+		5134D59522F2DF0200CA14CF /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		5134D59622F2DF0200CA14CF /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
+		5134D59822F2DF0200CA14CF /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
+		5134D59922F2DF0200CA14CF /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
+		5134D59A22F2DF0200CA14CF /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
+		5134D59C22F2DF0200CA14CF /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
+		5134D59E22F2DF0200CA14CF /* ReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
+		5134D5A722F2DF7C00CA14CF /* HZHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHeader.swift; sourceTree = "<group>"; };
+		5134D5A922F2E1A600CA14CF /* HZBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZBasicContentView.swift; sourceTree = "<group>"; };
+		5134D5AB22F2E20100CA14CF /* HZBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZBouncesContentView.swift; sourceTree = "<group>"; };
+		5134D5AD22F2E29300CA14CF /* HZIrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZIrregularityBasicContentView.swift; sourceTree = "<group>"; };
+		61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZQ-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5134D51022F2CE8400CA14CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78339745B362C01D8CF2114 /* Pods_HZQ_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D52422F2CE8500CA14CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D52F22F2CE8500CA14CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37BEDBBF606A52BFC0A4F8ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */,
+				28B143BEF488C71844A2675B /* Pods-HZQ-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5134D50A22F2CE8400CA14CF = {
+			isa = PBXGroup;
+			children = (
+				5134D51522F2CE8400CA14CF /* HZQ-Swift */,
+				5134D52A22F2CE8500CA14CF /* HZQ-SwiftTests */,
+				5134D53522F2CE8500CA14CF /* HZQ-SwiftUITests */,
+				5134D51422F2CE8400CA14CF /* Products */,
+				37BEDBBF606A52BFC0A4F8ED /* Pods */,
+				B2453FD0BD612B9C8565CC3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5134D51422F2CE8400CA14CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5134D51322F2CE8400CA14CF /* HZQ-Swift.app */,
+				5134D52722F2CE8500CA14CF /* HZQ-SwiftTests.xctest */,
+				5134D53222F2CE8500CA14CF /* HZQ-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5134D51522F2CE8400CA14CF /* HZQ-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5134D54622F2CF3F00CA14CF /* AppDelegate */,
+				5134D54422F2CF3F00CA14CF /* Common */,
+				5134D54522F2CF3F00CA14CF /* Controller */,
+				5134D54822F2CF4000CA14CF /* Lib */,
+				5134D54722F2CF3F00CA14CF /* Other */,
+				5134D51A22F2CE8400CA14CF /* Main.storyboard */,
+				5134D51D22F2CE8500CA14CF /* Assets.xcassets */,
+				5134D51F22F2CE8500CA14CF /* LaunchScreen.storyboard */,
+				5134D52222F2CE8500CA14CF /* Info.plist */,
+			);
+			path = "HZQ-Swift";
+			sourceTree = "<group>";
+		};
+		5134D52A22F2CE8500CA14CF /* HZQ-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5134D52B22F2CE8500CA14CF /* HZQ_SwiftTests.swift */,
+				5134D52D22F2CE8500CA14CF /* Info.plist */,
+			);
+			path = "HZQ-SwiftTests";
+			sourceTree = "<group>";
+		};
+		5134D53522F2CE8500CA14CF /* HZQ-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5134D53622F2CE8500CA14CF /* HZQ_SwiftUITests.swift */,
+				5134D53822F2CE8500CA14CF /* Info.plist */,
+			);
+			path = "HZQ-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		5134D54422F2CF3F00CA14CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5A722F2DF7C00CA14CF /* HZHeader.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5134D54522F2CF3F00CA14CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5134D54F22F2D79400CA14CF /* Main */,
+				5134D54E22F2D78E00CA14CF /* 喜马拉雅 */,
+				5134D54D22F2D78500CA14CF /* Find */,
+				5134D54C22F2D77E00CA14CF /* Home */,
+				5134D54B22F2D77300CA14CF /* Listen */,
+				5134D54A22F2D76D00CA14CF /* Mine */,
+				5134D54922F2D75500CA14CF /* Play */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5134D54622F2CF3F00CA14CF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5134D51622F2CE8400CA14CF /* AppDelegate.swift */,
+				5134D51822F2CE8400CA14CF /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5134D54722F2CF3F00CA14CF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5134D54822F2CF4000CA14CF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59222F2DF0200CA14CF /* CustomLabel */,
+				5134D59B22F2DF0200CA14CF /* Refresh */,
+				5134D59D22F2DF0200CA14CF /* ReplicatorLayer */,
+				5134D59422F2DF0200CA14CF /* WRNavigationBar */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		5134D54922F2D75500CA14CF /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				5134D55822F2D83600CA14CF /* HZPlayViewController.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		5134D54A22F2D76D00CA14CF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5134D55622F2D82500CA14CF /* HZMineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		5134D54B22F2D77300CA14CF /* Listen */ = {
+			isa = PBXGroup;
+			children = (
+				5134D55422F2D81C00CA14CF /* HZListenViewController.swift */,
+			);
+			path = Listen;
+			sourceTree = "<group>";
+		};
+		5134D54C22F2D77E00CA14CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5134D55222F2D80400CA14CF /* HZHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5134D54D22F2D78500CA14CF /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				5134D55022F2D7E000CA14CF /* HZFindViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		5134D54E22F2D78E00CA14CF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		5134D54F22F2D79400CA14CF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59022F2DEE300CA14CF /* HZNavigationController.swift */,
+				5134D5A922F2E1A600CA14CF /* HZBasicContentView.swift */,
+				5134D5AB22F2E20100CA14CF /* HZBouncesContentView.swift */,
+				5134D5AD22F2E29300CA14CF /* HZIrregularityBasicContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5134D59222F2DF0200CA14CF /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59322F2DF0200CA14CF /* LBFMCustomLabel.swift */,
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
+		5134D59422F2DF0200CA14CF /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59522F2DF0200CA14CF /* WRNavigationBar.swift */,
+				5134D59622F2DF0200CA14CF /* WRCustomNavigationBar.swift */,
+				5134D59722F2DF0200CA14CF /* WRCycleScrollView */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
+		5134D59722F2DF0200CA14CF /* WRCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59822F2DF0200CA14CF /* WRProxy.swift */,
+				5134D59922F2DF0200CA14CF /* WRCycleScrollView.swift */,
+				5134D59A22F2DF0200CA14CF /* WRCycleCell.swift */,
+			);
+			path = WRCycleScrollView;
+			sourceTree = "<group>";
+		};
+		5134D59B22F2DF0200CA14CF /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59C22F2DF0200CA14CF /* URefresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		5134D59D22F2DF0200CA14CF /* ReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5134D59E22F2DF0200CA14CF /* ReplicatorLayer.swift */,
+			);
+			path = ReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		B2453FD0BD612B9C8565CC3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5134D51222F2CE8400CA14CF /* HZQ-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5134D53B22F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-Swift" */;
+			buildPhases = (
+				8010624D28B58F1145A1E602 /* [CP] Check Pods Manifest.lock */,
+				5134D50F22F2CE8400CA14CF /* Sources */,
+				5134D51022F2CE8400CA14CF /* Frameworks */,
+				5134D51122F2CE8400CA14CF /* Resources */,
+				DB3457DC87E3B584CEA28455 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HZQ-Swift";
+			productName = "HZQ-Swift";
+			productReference = 5134D51322F2CE8400CA14CF /* HZQ-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5134D52622F2CE8500CA14CF /* HZQ-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5134D53E22F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-SwiftTests" */;
+			buildPhases = (
+				5134D52322F2CE8500CA14CF /* Sources */,
+				5134D52422F2CE8500CA14CF /* Frameworks */,
+				5134D52522F2CE8500CA14CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5134D52922F2CE8500CA14CF /* PBXTargetDependency */,
+			);
+			name = "HZQ-SwiftTests";
+			productName = "HZQ-SwiftTests";
+			productReference = 5134D52722F2CE8500CA14CF /* HZQ-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5134D53122F2CE8500CA14CF /* HZQ-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5134D54122F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-SwiftUITests" */;
+			buildPhases = (
+				5134D52E22F2CE8500CA14CF /* Sources */,
+				5134D52F22F2CE8500CA14CF /* Frameworks */,
+				5134D53022F2CE8500CA14CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5134D53422F2CE8500CA14CF /* PBXTargetDependency */,
+			);
+			name = "HZQ-SwiftUITests";
+			productName = "HZQ-SwiftUITests";
+			productReference = 5134D53222F2CE8500CA14CF /* HZQ-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5134D50B22F2CE8400CA14CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HZ;
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = huzhiqiang;
+				TargetAttributes = {
+					5134D51222F2CE8400CA14CF = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5134D52622F2CE8500CA14CF = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 5134D51222F2CE8400CA14CF;
+					};
+					5134D53122F2CE8500CA14CF = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 5134D51222F2CE8400CA14CF;
+					};
+				};
+			};
+			buildConfigurationList = 5134D50E22F2CE8400CA14CF /* Build configuration list for PBXProject "HZQ-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5134D50A22F2CE8400CA14CF;
+			productRefGroup = 5134D51422F2CE8400CA14CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5134D51222F2CE8400CA14CF /* HZQ-Swift */,
+				5134D52622F2CE8500CA14CF /* HZQ-SwiftTests */,
+				5134D53122F2CE8500CA14CF /* HZQ-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5134D51122F2CE8400CA14CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5134D52122F2CE8500CA14CF /* LaunchScreen.storyboard in Resources */,
+				5134D51E22F2CE8500CA14CF /* Assets.xcassets in Resources */,
+				5134D51C22F2CE8400CA14CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D52522F2CE8500CA14CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D53022F2CE8500CA14CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8010624D28B58F1145A1E602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZQ-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB3457DC87E3B584CEA28455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DNSPageView/DNSPageView.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/JXMarqueeView/JXMarqueeView.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/StreamingKit/StreamingKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DNSPageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXMarqueeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StreamingKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5134D50F22F2CE8400CA14CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5134D55522F2D81C00CA14CF /* HZListenViewController.swift in Sources */,
+				5134D51922F2CE8400CA14CF /* ViewController.swift in Sources */,
+				5134D5A022F2DF0300CA14CF /* WRNavigationBar.swift in Sources */,
+				5134D5A822F2DF7C00CA14CF /* HZHeader.swift in Sources */,
+				5134D5A422F2DF0300CA14CF /* WRCycleCell.swift in Sources */,
+				5134D55122F2D7E000CA14CF /* HZFindViewController.swift in Sources */,
+				5134D55722F2D82500CA14CF /* HZMineViewController.swift in Sources */,
+				5134D59F22F2DF0300CA14CF /* LBFMCustomLabel.swift in Sources */,
+				5134D5A122F2DF0300CA14CF /* WRCustomNavigationBar.swift in Sources */,
+				5134D55922F2D83600CA14CF /* HZPlayViewController.swift in Sources */,
+				5134D5A522F2DF0300CA14CF /* URefresh.swift in Sources */,
+				5134D51722F2CE8400CA14CF /* AppDelegate.swift in Sources */,
+				5134D5AC22F2E20100CA14CF /* HZBouncesContentView.swift in Sources */,
+				5134D59122F2DEE300CA14CF /* HZNavigationController.swift in Sources */,
+				5134D5A322F2DF0300CA14CF /* WRCycleScrollView.swift in Sources */,
+				5134D5A222F2DF0300CA14CF /* WRProxy.swift in Sources */,
+				5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */,
+				5134D5AA22F2E1A600CA14CF /* HZBasicContentView.swift in Sources */,
+				5134D5A622F2DF0300CA14CF /* ReplicatorLayer.swift in Sources */,
+				5134D55322F2D80400CA14CF /* HZHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D52322F2CE8500CA14CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5134D52C22F2CE8500CA14CF /* HZQ_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5134D52E22F2CE8500CA14CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5134D53722F2CE8500CA14CF /* HZQ_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5134D52922F2CE8500CA14CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5134D51222F2CE8400CA14CF /* HZQ-Swift */;
+			targetProxy = 5134D52822F2CE8500CA14CF /* PBXContainerItemProxy */;
+		};
+		5134D53422F2CE8500CA14CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5134D51222F2CE8400CA14CF /* HZQ-Swift */;
+			targetProxy = 5134D53322F2CE8500CA14CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5134D51A22F2CE8400CA14CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5134D51B22F2CE8400CA14CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5134D51F22F2CE8500CA14CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5134D52022F2CE8500CA14CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5134D53922F2CE8500CA14CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5134D53A22F2CE8500CA14CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5134D53C22F2CE8500CA14CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5134D53D22F2CE8500CA14CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B143BEF488C71844A2675B /* Pods-HZQ-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5134D53F22F2CE8500CA14CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZQ-Swift.app/HZQ-Swift";
+			};
+			name = Debug;
+		};
+		5134D54022F2CE8500CA14CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZQ-Swift.app/HZQ-Swift";
+			};
+			name = Release;
+		};
+		5134D54222F2CE8500CA14CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HZQ-Swift";
+			};
+			name = Debug;
+		};
+		5134D54322F2CE8500CA14CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HZQ-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hangMan.HZQ-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HZQ-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5134D50E22F2CE8400CA14CF /* Build configuration list for PBXProject "HZQ-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5134D53922F2CE8500CA14CF /* Debug */,
+				5134D53A22F2CE8500CA14CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5134D53B22F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5134D53C22F2CE8500CA14CF /* Debug */,
+				5134D53D22F2CE8500CA14CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5134D53E22F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5134D53F22F2CE8500CA14CF /* Debug */,
+				5134D54022F2CE8500CA14CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5134D54122F2CE8500CA14CF /* Build configuration list for PBXNativeTarget "HZQ-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5134D54222F2CE8500CA14CF /* Debug */,
+				5134D54322F2CE8500CA14CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5134D50B22F2CE8400CA14CF /* Project object */;
+}
