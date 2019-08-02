@@ -32,6 +32,17 @@
 		5134D5AA22F2E1A600CA14CF /* HZBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5A922F2E1A600CA14CF /* HZBasicContentView.swift */; };
 		5134D5AC22F2E20100CA14CF /* HZBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5AB22F2E20100CA14CF /* HZBouncesContentView.swift */; };
 		5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5AD22F2E29300CA14CF /* HZIrregularityBasicContentView.swift */; };
+		5134D5B522F3CA3500CA14CF /* HZHomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5B422F3CA3500CA14CF /* HZHomeRecommendController.swift */; };
+		5134D5B722F3CA5200CA14CF /* HZHomeClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5B622F3CA5200CA14CF /* HZHomeClassifyViewController.swift */; };
+		5134D5B922F3CA6500CA14CF /* HZHomeBroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5B822F3CA6500CA14CF /* HZHomeBroadcastViewController.swift */; };
+		5134D5BB22F3CA7700CA14CF /* HZHomeLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5BA22F3CA7700CA14CF /* HZHomeLiveViewController.swift */; };
+		5134D5BD22F3CA8B00CA14CF /* HZHomeVIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5BC22F3CA8B00CA14CF /* HZHomeVIPViewController.swift */; };
+		5134D5C422F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5C322F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift */; };
+		5134D5C622F3E2CE00CA14CF /* HZRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5C522F3E2CE00CA14CF /* HZRecommendViewModel.swift */; };
+		5134D5CA22F3E5BB00CA14CF /* HZRecommendHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5C922F3E5BB00CA14CF /* HZRecommendHeaderCell.swift */; };
+		5134D5CC22F4183D00CA14CF /* HZRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CB22F4183D00CA14CF /* HZRecommendModel.swift */; };
+		5134D5CE22F4217700CA14CF /* HZRecommendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CD22F4217700CA14CF /* HZRecommendAPI.swift */; };
+		5134D5D022F42E5800CA14CF /* HZWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CF22F42E5800CA14CF /* HZWebViewController.swift */; };
 		A78339745B362C01D8CF2114 /* Pods_HZQ_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +97,17 @@
 		5134D5A922F2E1A600CA14CF /* HZBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZBasicContentView.swift; sourceTree = "<group>"; };
 		5134D5AB22F2E20100CA14CF /* HZBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZBouncesContentView.swift; sourceTree = "<group>"; };
 		5134D5AD22F2E29300CA14CF /* HZIrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZIrregularityBasicContentView.swift; sourceTree = "<group>"; };
+		5134D5B422F3CA3500CA14CF /* HZHomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeRecommendController.swift; sourceTree = "<group>"; };
+		5134D5B622F3CA5200CA14CF /* HZHomeClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeClassifyViewController.swift; sourceTree = "<group>"; };
+		5134D5B822F3CA6500CA14CF /* HZHomeBroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeBroadcastViewController.swift; sourceTree = "<group>"; };
+		5134D5BA22F3CA7700CA14CF /* HZHomeLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeLiveViewController.swift; sourceTree = "<group>"; };
+		5134D5BC22F3CA8B00CA14CF /* HZHomeVIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeVIPViewController.swift; sourceTree = "<group>"; };
+		5134D5C322F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZHomeGuessYouLikeMoreViewController.swift; sourceTree = "<group>"; };
+		5134D5C522F3E2CE00CA14CF /* HZRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendViewModel.swift; sourceTree = "<group>"; };
+		5134D5C922F3E5BB00CA14CF /* HZRecommendHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendHeaderCell.swift; sourceTree = "<group>"; };
+		5134D5CB22F4183D00CA14CF /* HZRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendModel.swift; sourceTree = "<group>"; };
+		5134D5CD22F4217700CA14CF /* HZRecommendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendAPI.swift; sourceTree = "<group>"; };
+		5134D5CF22F42E5800CA14CF /* HZWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZWebViewController.swift; sourceTree = "<group>"; };
 		61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZQ-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,6 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				5134D55222F2D80400CA14CF /* HZHomeViewController.swift */,
+				5134D5B322F3C9F500CA14CF /* 推荐 */,
+				5134D5B222F3C9EC00CA14CF /* 分类 */,
+				5134D5B122F3C9E600CA14CF /* 广播 */,
+				5134D5B022F3C9E000CA14CF /* 直播 */,
+				5134D5AF22F3C9D900CA14CF /* VIP */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -329,6 +356,108 @@
 				5134D59E22F2DF0200CA14CF /* ReplicatorLayer.swift */,
 			);
 			path = ReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		5134D5AF22F3C9D900CA14CF /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5BC22F3CA8B00CA14CF /* HZHomeVIPViewController.swift */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		5134D5B022F3C9E000CA14CF /* 直播 */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5BA22F3CA7700CA14CF /* HZHomeLiveViewController.swift */,
+			);
+			path = "直播";
+			sourceTree = "<group>";
+		};
+		5134D5B122F3C9E600CA14CF /* 广播 */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5B822F3CA6500CA14CF /* HZHomeBroadcastViewController.swift */,
+			);
+			path = "广播";
+			sourceTree = "<group>";
+		};
+		5134D5B222F3C9EC00CA14CF /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5B622F3CA5200CA14CF /* HZHomeClassifyViewController.swift */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		5134D5B322F3C9F500CA14CF /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5B422F3CA3500CA14CF /* HZHomeRecommendController.swift */,
+				5134D5CF22F42E5800CA14CF /* HZWebViewController.swift */,
+				5134D5C222F3D30600CA14CF /* API */,
+				5134D5C122F3D2EF00CA14CF /* Controller */,
+				5134D5C022F3D2E500CA14CF /* Model */,
+				5134D5BF22F3D2DE00CA14CF /* View */,
+				5134D5BE22F3D2D300CA14CF /* ViewModel */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		5134D5BE22F3D2D300CA14CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5C522F3E2CE00CA14CF /* HZRecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5134D5BF22F3D2DE00CA14CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5C822F3E57400CA14CF /* HZHeaderViewCell */,
+				5134D5C722F3E4DA00CA14CF /* 组头组尾试图 */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5134D5C022F3D2E500CA14CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5CB22F4183D00CA14CF /* HZRecommendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5134D5C122F3D2EF00CA14CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5C322F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5134D5C222F3D30600CA14CF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5CD22F4217700CA14CF /* HZRecommendAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5134D5C722F3E4DA00CA14CF /* 组头组尾试图 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "组头组尾试图";
+			sourceTree = "<group>";
+		};
+		5134D5C822F3E57400CA14CF /* HZHeaderViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5134D5C922F3E5BB00CA14CF /* HZRecommendHeaderCell.swift */,
+			);
+			path = HZHeaderViewCell;
 			sourceTree = "<group>";
 		};
 		B2453FD0BD612B9C8565CC3F /* Frameworks */ = {
@@ -541,25 +670,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				5134D55522F2D81C00CA14CF /* HZListenViewController.swift in Sources */,
+				5134D5BD22F3CA8B00CA14CF /* HZHomeVIPViewController.swift in Sources */,
+				5134D5CC22F4183D00CA14CF /* HZRecommendModel.swift in Sources */,
 				5134D51922F2CE8400CA14CF /* ViewController.swift in Sources */,
 				5134D5A022F2DF0300CA14CF /* WRNavigationBar.swift in Sources */,
 				5134D5A822F2DF7C00CA14CF /* HZHeader.swift in Sources */,
+				5134D5B522F3CA3500CA14CF /* HZHomeRecommendController.swift in Sources */,
+				5134D5C622F3E2CE00CA14CF /* HZRecommendViewModel.swift in Sources */,
+				5134D5D022F42E5800CA14CF /* HZWebViewController.swift in Sources */,
 				5134D5A422F2DF0300CA14CF /* WRCycleCell.swift in Sources */,
 				5134D55122F2D7E000CA14CF /* HZFindViewController.swift in Sources */,
 				5134D55722F2D82500CA14CF /* HZMineViewController.swift in Sources */,
+				5134D5C422F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift in Sources */,
 				5134D59F22F2DF0300CA14CF /* LBFMCustomLabel.swift in Sources */,
 				5134D5A122F2DF0300CA14CF /* WRCustomNavigationBar.swift in Sources */,
 				5134D55922F2D83600CA14CF /* HZPlayViewController.swift in Sources */,
+				5134D5B922F3CA6500CA14CF /* HZHomeBroadcastViewController.swift in Sources */,
 				5134D5A522F2DF0300CA14CF /* URefresh.swift in Sources */,
 				5134D51722F2CE8400CA14CF /* AppDelegate.swift in Sources */,
 				5134D5AC22F2E20100CA14CF /* HZBouncesContentView.swift in Sources */,
 				5134D59122F2DEE300CA14CF /* HZNavigationController.swift in Sources */,
+				5134D5CA22F3E5BB00CA14CF /* HZRecommendHeaderCell.swift in Sources */,
 				5134D5A322F2DF0300CA14CF /* WRCycleScrollView.swift in Sources */,
 				5134D5A222F2DF0300CA14CF /* WRProxy.swift in Sources */,
 				5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */,
+				5134D5BB22F3CA7700CA14CF /* HZHomeLiveViewController.swift in Sources */,
+				5134D5CE22F4217700CA14CF /* HZRecommendAPI.swift in Sources */,
 				5134D5AA22F2E1A600CA14CF /* HZBasicContentView.swift in Sources */,
 				5134D5A622F2DF0300CA14CF /* ReplicatorLayer.swift in Sources */,
 				5134D55322F2D80400CA14CF /* HZHomeViewController.swift in Sources */,
+				5134D5B722F3CA5200CA14CF /* HZHomeClassifyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
