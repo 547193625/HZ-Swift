@@ -17,7 +17,7 @@ class HZHomeRecommendController: UIViewController {
     // 注册不同的cell
     private let HZRecommendHeaderCellID     = "HZRecommendHeaderCell"
     // 猜你喜欢
-    private let LBFMRecommendGuessLikeCellID  = "LBFMRecommendGuessLikeCell"
+    private let HZRecommendGuessLikeCellID  = "HZRecommendGuessLikeCell"
     // 热门有声书
     private let LBFMHotAudiobookCellID        = "LBFMHotAudiobookCell"
     // 广告
@@ -66,6 +66,7 @@ class HZHomeRecommendController: UIViewController {
         // - 注册不同分区cell
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.register(HZRecommendHeaderCell.self, forCellWithReuseIdentifier: HZRecommendHeaderCellID)
+        collection.register(HZRecommendGuessLikeCell.self, forCellWithReuseIdentifier: HZRecommendGuessLikeCellID)
         
         return collection
     }()
@@ -92,9 +93,15 @@ extension HZHomeRecommendController: UICollectionViewDelegateFlowLayout,UICollec
         if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" {
             let cell:HZRecommendHeaderCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendHeaderCellID, for: indexPath) as! HZRecommendHeaderCell
             cell.focusModel = viewModel.focus
-//            cell.squareList = viewModel.squareList
-//            cell.topBuzzListData = viewModel.topBuzzList
+            cell.squareList = viewModel.squareList
+            cell.topBuzzListData = viewModel.topBuzzList
             cell.delegate = self
+            return cell
+        }else if moduleType == "guessYouLike" || moduleType == "paidCategory" || moduleType == "categoriesForLong" || moduleType == "cityCategory"{
+            // 横式排列布局cell
+            let cell:HZRecommendGuessLikeCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendGuessLikeCellID, for: indexPath) as! HZRecommendGuessLikeCell
+//            cell.delegate = self
+//            cell.recommendListData = viewModel.homeRecommendList?[indexPath.section].list
             return cell
         }else{
             let cell:HZRecommendHeaderCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendHeaderCellID, for: indexPath) as! HZRecommendHeaderCell

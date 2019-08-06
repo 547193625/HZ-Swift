@@ -43,6 +43,10 @@
 		5134D5CC22F4183D00CA14CF /* HZRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CB22F4183D00CA14CF /* HZRecommendModel.swift */; };
 		5134D5CE22F4217700CA14CF /* HZRecommendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CD22F4217700CA14CF /* HZRecommendAPI.swift */; };
 		5134D5D022F42E5800CA14CF /* HZWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134D5CF22F42E5800CA14CF /* HZWebViewController.swift */; };
+		5145987122F80AD900F71533 /* HZRecommendGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145987022F80AD900F71533 /* HZRecommendGridCell.swift */; };
+		5145987422F9537200F71533 /* HZRecommendNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145987322F9537200F71533 /* HZRecommendNewsCell.swift */; };
+		5145987722F96E0400F71533 /* HZRecommendGuessLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145987622F96E0400F71533 /* HZRecommendGuessLikeCell.swift */; };
+		5145987922F96EE400F71533 /* HZGuessYouLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145987822F96EE400F71533 /* HZGuessYouLikeCell.swift */; };
 		A78339745B362C01D8CF2114 /* Pods_HZQ_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		5134D5CB22F4183D00CA14CF /* HZRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendModel.swift; sourceTree = "<group>"; };
 		5134D5CD22F4217700CA14CF /* HZRecommendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendAPI.swift; sourceTree = "<group>"; };
 		5134D5CF22F42E5800CA14CF /* HZWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZWebViewController.swift; sourceTree = "<group>"; };
+		5145987022F80AD900F71533 /* HZRecommendGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendGridCell.swift; sourceTree = "<group>"; };
+		5145987322F9537200F71533 /* HZRecommendNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendNewsCell.swift; sourceTree = "<group>"; };
+		5145987622F96E0400F71533 /* HZRecommendGuessLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRecommendGuessLikeCell.swift; sourceTree = "<group>"; };
+		5145987822F96EE400F71533 /* HZGuessYouLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZGuessYouLikeCell.swift; sourceTree = "<group>"; };
 		61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZQ-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +423,9 @@
 		5134D5BF22F3D2DE00CA14CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5145987522F96DB400F71533 /* 猜你喜欢 */,
+				5145987222F9533C00F71533 /* NewsCell */,
+				5145986F22F80ABA00F71533 /* 九宫格 */,
 				5134D5C822F3E57400CA14CF /* HZHeaderViewCell */,
 				5134D5C722F3E4DA00CA14CF /* 组头组尾试图 */,
 			);
@@ -458,6 +469,31 @@
 				5134D5C922F3E5BB00CA14CF /* HZRecommendHeaderCell.swift */,
 			);
 			path = HZHeaderViewCell;
+			sourceTree = "<group>";
+		};
+		5145986F22F80ABA00F71533 /* 九宫格 */ = {
+			isa = PBXGroup;
+			children = (
+				5145987022F80AD900F71533 /* HZRecommendGridCell.swift */,
+			);
+			path = "九宫格";
+			sourceTree = "<group>";
+		};
+		5145987222F9533C00F71533 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				5145987322F9537200F71533 /* HZRecommendNewsCell.swift */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		5145987522F96DB400F71533 /* 猜你喜欢 */ = {
+			isa = PBXGroup;
+			children = (
+				5145987622F96E0400F71533 /* HZRecommendGuessLikeCell.swift */,
+				5145987822F96EE400F71533 /* HZGuessYouLikeCell.swift */,
+			);
+			path = "猜你喜欢";
 			sourceTree = "<group>";
 		};
 		B2453FD0BD612B9C8565CC3F /* Frameworks */ = {
@@ -681,8 +717,10 @@
 				5134D5A422F2DF0300CA14CF /* WRCycleCell.swift in Sources */,
 				5134D55122F2D7E000CA14CF /* HZFindViewController.swift in Sources */,
 				5134D55722F2D82500CA14CF /* HZMineViewController.swift in Sources */,
+				5145987422F9537200F71533 /* HZRecommendNewsCell.swift in Sources */,
 				5134D5C422F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift in Sources */,
 				5134D59F22F2DF0300CA14CF /* LBFMCustomLabel.swift in Sources */,
+				5145987922F96EE400F71533 /* HZGuessYouLikeCell.swift in Sources */,
 				5134D5A122F2DF0300CA14CF /* WRCustomNavigationBar.swift in Sources */,
 				5134D55922F2D83600CA14CF /* HZPlayViewController.swift in Sources */,
 				5134D5B922F3CA6500CA14CF /* HZHomeBroadcastViewController.swift in Sources */,
@@ -691,7 +729,9 @@
 				5134D5AC22F2E20100CA14CF /* HZBouncesContentView.swift in Sources */,
 				5134D59122F2DEE300CA14CF /* HZNavigationController.swift in Sources */,
 				5134D5CA22F3E5BB00CA14CF /* HZRecommendHeaderCell.swift in Sources */,
+				5145987122F80AD900F71533 /* HZRecommendGridCell.swift in Sources */,
 				5134D5A322F2DF0300CA14CF /* WRCycleScrollView.swift in Sources */,
+				5145987722F96E0400F71533 /* HZRecommendGuessLikeCell.swift in Sources */,
 				5134D5A222F2DF0300CA14CF /* WRProxy.swift in Sources */,
 				5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */,
 				5134D5BB22F3CA7700CA14CF /* HZHomeLiveViewController.swift in Sources */,
