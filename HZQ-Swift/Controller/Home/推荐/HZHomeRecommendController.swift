@@ -10,8 +10,10 @@ import UIKit
 import SwiftMessages
 class HZHomeRecommendController: UIViewController {
     
+    // 穿插的广告数据
+    private var recommnedAdvertList:[HZRecommnedAdvertModel]?
     // cell 注册
-    private let LBFMRecommendHeaderViewID     = "LBFMRecommendHeaderView"
+    private let HZRecommendHeaderViewID     = "HZRecommendHeaderView"
     private let LBFMRecommendFooterViewID     = "LBFMRecommendFooterView"
     
     // 注册不同的cell
@@ -19,15 +21,15 @@ class HZHomeRecommendController: UIViewController {
     // 猜你喜欢
     private let HZRecommendGuessLikeCellID  = "HZRecommendGuessLikeCell"
     // 热门有声书
-    private let LBFMHotAudiobookCellID        = "LBFMHotAudiobookCell"
+    private let HZHotAudioBooMainCellID        = "HZHotAudioBooMainCell"
     // 广告
-    private let LBFMAdvertCellID              = "LBFMAdvertCell"
+    private let HZAdvertCellID              = "HZAdvertCell"
     // 懒人电台
-    private let LBFMOneKeyListenCellID        = "LBFMOneKeyListenCell"
+    private let HZOneKeyListenCellID        = "HZMainOneKeyListenCell"
     // 为你推荐
     private let LBFMRecommendForYouCellID     = "LBFMRecommendForYouCell"
     // 推荐直播
-    private let LBFMHomeRecommendLiveCellID   = "LBFMHomeRecommendLiveCell"
+    private let HZHomeRecommendLiveCellID   = "HZHomeRecommendLiveCell"
     
   
     override func viewDidLoad() {
@@ -60,13 +62,17 @@ class HZHomeRecommendController: UIViewController {
         collection.dataSource = self
         collection.backgroundColor = UIColor.white
         // - 注册头视图和尾视图
-//        collection.register(<#T##viewClass: AnyClass?##AnyClass?#>, forSupplementaryViewOfKind: <#T##String#>, withReuseIdentifier: <#T##String#>)
+        collection.register(HZRecommendHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HZRecommendHeaderViewID)
         
         
         // - 注册不同分区cell
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.register(HZRecommendHeaderCell.self, forCellWithReuseIdentifier: HZRecommendHeaderCellID)
         collection.register(HZRecommendGuessLikeCell.self, forCellWithReuseIdentifier: HZRecommendGuessLikeCellID)
+        collection.register(HZHotAudioBooMainCell.self, forCellWithReuseIdentifier: HZHotAudioBooMainCellID)
+        collection.register(HZAdvertCell.self, forCellWithReuseIdentifier: HZAdvertCellID)
+        collection.register(HZMainOneKeyListenCell.self, forCellWithReuseIdentifier: HZOneKeyListenCellID)
+        collection.register(HZHomeRecommendLiveCell.self, forCellWithReuseIdentifier: HZHomeRecommendLiveCellID)
         
         return collection
     }()
@@ -90,6 +96,8 @@ extension HZHomeRecommendController: UICollectionViewDelegateFlowLayout,UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let moduleType = viewModel.homeRecommendList?[indexPath.section].moduleType
         
+        print("moduleType___",moduleType!)
+        
         if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" {
             let cell:HZRecommendHeaderCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendHeaderCellID, for: indexPath) as! HZRecommendHeaderCell
             cell.focusModel = viewModel.focus
@@ -100,15 +108,33 @@ extension HZHomeRecommendController: UICollectionViewDelegateFlowLayout,UICollec
         }else if moduleType == "guessYouLike" || moduleType == "paidCategory" || moduleType == "categoriesForLong" || moduleType == "cityCategory"{
             // 横式排列布局cell
             let cell:HZRecommendGuessLikeCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendGuessLikeCellID, for: indexPath) as! HZRecommendGuessLikeCell
-//            cell.delegate = self
-//            cell.recommendListData = viewModel.homeRecommendList?[indexPath.section].list
+            cell.delegate = self
+            cell.recommendListData = viewModel.homeRecommendList?[indexPath.section].list
+            return cell
+        }else if moduleType == "categoriesForShort" || moduleType == "playlist" || moduleType == "categoriesForExplore"{
+            // 竖式排列布局cell
+            let cell:HZHotAudioBooMainCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZHotAudioBooMainCellID, for: indexPath) as! HZHotAudioBooMainCell
+            cell.delegate = self
+            cell.recommendListData = viewModel.homeRecommendList?[indexPath.section].list
+            return cell
+        }else if moduleType == "ad" {
+            let cell:HZAdvertCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZAdvertCellID, for: indexPath) as! HZAdvertCell
+            if indexPath.section == 7 {
+                cell.adModel = self.recommnedAdvertList?[0]
+            }else if indexPath.section == 13 {
+                cell.adModel = self.recommnedAdvertList?[1]
+            }
+            return cell
+        }else if moduleType == "oneKeyListen" {
+            let cell:HZMainOneKeyListenCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZOneKeyListenCellID, for: indexPath) as! HZMainOneKeyListenCell
+            cell.oneKeyListenList = viewModel.oneKeyListenList
+            return cell
+        }else if moduleType == "live" {
+            let cell:HZHomeRecommendLiveCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZHomeRecommendLiveCellID, for: indexPath) as! HZHomeRecommendLiveCell
+            cell.liveList = viewModel.liveList
             return cell
         }else{
-            let cell:HZRecommendHeaderCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendHeaderCellID, for: indexPath) as! HZRecommendHeaderCell
-            cell.focusModel = viewModel.focus
-            //            cell.squareList = viewModel.squareList
-            //            cell.topBuzzListData = viewModel.topBuzzList
-            //            cell.delegate = self
+            let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
             return cell
         }
     }
@@ -130,6 +156,51 @@ extension HZHomeRecommendController: UICollectionViewDelegateFlowLayout,UICollec
     // item 的尺寸
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return viewModel.sizeForItemAt(indexPath: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return viewModel.referenceSizeForHeaderInSection(section: section)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+//        return viewModel.referenceSizeForFooterInSection(section: section)
+//    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let moduleType = viewModel.homeRecommendList?[indexPath.section].moduleType
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView : HZRecommendHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HZRecommendHeaderViewID, for: indexPath) as! HZRecommendHeaderView
+            headerView.homeRecommendList = viewModel.homeRecommendList?[indexPath.section]
+            // 分区头右边更多按钮点击跳转
+            headerView.headerMoreBtnClick = {[weak self]() in
+                if moduleType == "guessYouLike"{
+//                    let vc = LBFMHomeGuessYouLikeMoreController()
+//                    self?.navigationController?.pushViewController(vc, animated: true)
+                }else if moduleType == "paidCategory" {
+//                    let vc = LBFMHomeVIPController(isRecommendPush:true)
+//                    vc.title = "精品"
+//                    self?.navigationController?.pushViewController(vc, animated: true)
+                }else if moduleType == "live"{
+//                    let vc = LBFMHomeLiveController()
+//                    vc.title = "直播"
+//                    self?.navigationController?.pushViewController(vc, animated: true)
+                }else {
+//                    guard let categoryId = self?.viewModel.homeRecommendList?[indexPath.section].target?.categoryId else {return}
+//                    if categoryId != 0 {
+//                        let vc = LBFMClassifySubMenuController(categoryId:categoryId,isVipPush:false)
+//                        vc.title = self?.viewModel.homeRecommendList?[indexPath.section].title
+//                        self?.navigationController?.pushViewController(vc, animated: true)
+//                    }
+                }
+            }
+            return headerView
+        }else{
+            
+        }
+//        else if kind == UICollectionView.elementKindSectionFooter {
+//            let footerView : LBFMRecommendFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: LBFMRecommendFooterViewID, for: indexPath) as! LBFMRecommendFooterView
+//            return footerView
+//        }
+        return UICollectionReusableView()
     }
 }
 
@@ -156,4 +227,17 @@ extension HZHomeRecommendController:HZRecommendHeaderCellDelegate{
     }
 }
 
+extension HZHomeRecommendController:HZRecommendGuessLikeCellDelegate{
+    func recommendGuessLikeCellItemClick(model: HZRecommendListModel) {
+        print("点击猜你喜欢")
+    }
+}
+
+extension HZHomeRecommendController:HZHotAudiobookCellDelegate{
+    func hotAudiobookCellItemClick(model: HZRecommendListModel) {
+        print("点击热门有声书")
+    }
+    
+    
+}
 

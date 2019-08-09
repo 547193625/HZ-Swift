@@ -18,7 +18,9 @@ class HZRecommendViewModel: NSObject {
     var focus:HZFocusModel?
     var squareList:[HZSquareModel]?
     var topBuzzList: [HZTopBuzzModel]?
-    
+    var guessYouLikeList: [HZGuessYouLikeModel]?
+    var oneKeyListenList: [HZOneKeyListenModel]?
+    var liveList: [HZLiveModel]?
     // Mark:--数据源更新
     typealias AddDataBlock = () ->Void
     var  updateDataBlock:AddDataBlock?
@@ -49,13 +51,13 @@ extension HZRecommendViewModel {
                         self.topBuzzList = topBuzz as? [HZTopBuzzModel]
                     }
                     
-//                    if let oneKeyListen = JSONDeserializer<LBFMOneKeyListenModel>.deserializeModelArrayFrom(json: json["list"][9]["list"].description) {
-//                        self.oneKeyListenList = oneKeyListen as? [LBFMOneKeyListenModel]
-//                    }
-//
-//                    if let live = JSONDeserializer<LBFMLiveModel>.deserializeModelArrayFrom(json: json["list"][14]["list"].description) {
-//                        self.liveList = live as? [LBFMLiveModel]
-//                    }
+                    if let oneKeyListen = JSONDeserializer<HZOneKeyListenModel>.deserializeModelArrayFrom(json: json["list"][9]["list"].description) {
+                        self.oneKeyListenList = oneKeyListen as? [HZOneKeyListenModel]
+                    }
+
+                    if let live = JSONDeserializer<HZLiveModel>.deserializeModelArrayFrom(json: json["list"][14]["list"].description) {
+                        self.liveList = live as? [HZLiveModel]
+                    }
                     self.updateDataBlock?()
                 }
             }

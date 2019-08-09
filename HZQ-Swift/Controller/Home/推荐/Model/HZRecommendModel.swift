@@ -148,3 +148,112 @@ struct HZTopBuzzModel: HandyJSON {
     var updatedAt: Int = 0
     var userSource: Int = 0
 }
+
+struct HZGuessYouLikeModel: HandyJSON {
+    var albumId: Int = 0
+    var categoryId: Int = 0
+    var commentsCount: Int = 0
+    var infoType: String?
+    var isDraft: Bool = false
+    var isFinished: Int = 0
+    var isPaid: Bool = false
+    var isVipFree: Bool = false
+    var lastUptrackAt: Int = 0
+    var materialType: String?
+    var nickname: String?
+    var pic: String?
+    var playsCount: Int = 0
+    var recSrc: String?
+    var recTrack: String?
+    var refundSupportType: Int = 0
+    var subtitle: String?
+    var title: String?
+    var tracksCount: Int = 0
+    var vipFreeType: Int = 0
+    
+    /// 更多追加
+    var coverMiddle:String?
+    var recReason:String?
+    var tracks:Int = 0
+    var playsCounts:Int = 0
+}
+struct HZLiveModel: HandyJSON {
+    var actualStartAt: Int = 0
+    var categoryId: Int = 0
+    var categoryName: String?
+    var chatId: Int = 0
+    var coverLarge: String?
+    var coverMiddle: String?
+    var coverSmall: String?
+    var description: String?
+    var endAt: Int = 0
+    var id: Int = 0
+    var name: String?
+    var nickname: String?
+    var playCount: Int = 0
+    var recSrc: String?
+    var recTrack: String?
+    var roomId: Int = 0
+    var startAt: Int = 0
+    var status: Int = 0
+    var uid: Int = 0
+}
+struct HZRecommnedAdvertModel: HandyJSON {
+    var shareData: HZAdvertShareData?
+    var isShareFlag: Bool = false
+    var thirdStatUrl: String?
+    var thirdShowStatUrls:[Any]?
+    var thirdClickStatUrls:[Any]?
+    var showTokens:[Any]?
+    var clickTokens:[Any]?
+    var recSrc: String?
+    var recTrack: String?
+    var link: String?
+    var realLink: String?
+    var adMark: String?
+    var isLandScape: Bool = false
+    var isInternal: Int = 0
+    var bucketIds: String?
+    var adpr: String?
+    var planId: Int = 0
+    var cover: String?
+    var showstyle: Int = 0
+    var name: String?
+    var description: String?
+    var scheme: String?
+    var linkType: Int = 0
+    var displayType: Int = 0
+    var clickType: Int = 0
+    var openlinkType: Int = 0
+    var loadingShowTime: Int = 0
+    var apkUrl: String?
+    var adtype: Int = 0
+    var auto: Bool = false
+    var position: Int = 0
+    var subCover: String?
+    var subName: String?
+    var adid:Int = 0
+    
+}
+struct HZAdvertShareData: HandyJSON {
+    var linkUrl: String?
+    var linkTitle: String?
+    var linkCoverPath: String?
+    var linkContent: String?
+    var isExternalUrl: Bool = false
+}
+
+struct HZOneKeyListenModel: HandyJSON {
+    var channelId: Int = 0
+    var channelName: String?
+    var cover: String?
+    var coverRound: String?
+    var onLineNum: Int = 0
+    var recInfo: HZRecInfo?
+}
+
+struct HZRecInfo: HandyJSON {
+    var recSrc: String?
+    var recTrack: String?
+}
+

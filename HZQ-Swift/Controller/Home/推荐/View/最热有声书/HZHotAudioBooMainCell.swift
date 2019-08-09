@@ -1,34 +1,32 @@
 //
-//  HZRecommendGuessLikeCell.swift
+//  HZHotAudioBooMainCell.swift
 //  HZQ-Swift
 //
-//  Created by apple on 2019/8/6.
+//  Created by apple on 2019/8/7.
 //  Copyright © 2019 huzhiqiang. All rights reserved.
 //
 
 import UIKit
-import SwiftyJSON
-import HandyJSON
-
-protocol HZRecommendGuessLikeCellDelegate:NSObjectProtocol {
-    func recommendGuessLikeCellItemClick(model:HZRecommendListModel)
+/// 添加cell点击代理方法
+protocol HZHotAudiobookCellDelegate:NSObjectProtocol {
+    func hotAudiobookCellItemClick(model:HZRecommendListModel)
 }
-class HZRecommendGuessLikeCell: UICollectionViewCell {
+
+class HZHotAudioBooMainCell: UICollectionViewCell {
     
-    weak var delegate : HZRecommendGuessLikeCellDelegate?
+    weak var delegate : HZHotAudiobookCellDelegate?
     
     private var recommendList:[HZRecommendListModel]?
     
-    private let HZGuessYouLikeCellID = "HZGuessYouLikeCell"
+    private let HZHotAudioBookCellID = "HZHotAudioBookCell"
     
-    private lazy var changeBtn: UIButton = {
-       let button = UIButton.init(type:.custom)
-        button.setTitle("换一批", for: .normal)
-        button.setTitleColor(LBFMButtonColor, for: .normal)
+    private lazy var changeBtn:UIButton = {
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
+        button.setTitle("换一批", for: UIControl.State.normal)
+        button.setTitleColor(LBFMButtonColor, for: UIControl.State.normal)
         button.backgroundColor = UIColor.init(red: 254/255.0, green: 232/255.0, blue: 227/255.0, alpha: 1)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 5.0
-        button.addTarget(self, action: #selector(upDataBtnClick(button:)), for: .touchUpInside)
         return button
     }()
     
@@ -39,16 +37,17 @@ class HZRecommendGuessLikeCell: UICollectionViewCell {
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.white
         collectionView.alwaysBounceVertical = true
-        collectionView.register(HZGuessYouLikeCell.self, forCellWithReuseIdentifier: HZGuessYouLikeCellID)
+        collectionView.register(HZHotAudioBookCell.self, forCellWithReuseIdentifier: HZHotAudioBookCellID)
         return collectionView
+        
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUpLayout()
+        setUpBookUI()
     }
     
-    func  setUpLayout(){
+    func setUpBookUI() {
         self.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { (make) in
             make.left.top.equalTo(15)
@@ -66,72 +65,50 @@ class HZRecommendGuessLikeCell: UICollectionViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
-    var recommendListData:[HZRecommendListModel]?{
+    var recommendListData:[HZRecommendListModel]? {
         didSet{
-            guard let model = recommendListData else {
-                return
-            }
+            guard let model = recommendListData else { return }
             self.recommendList = model
             self.collectionView.reloadData()
         }
     }
     
-    
-    
-    @objc func upDataBtnClick(button:UIButton){
-        // 首页推荐接口请求
-        HZRecommendProvider.request(.changeGuessYouLikeList) { result in
-            if case let .success(response) = result {
-                // 解析数据
-                let  data = try? response.mapJSON()
-                let json = JSON(data!)
-                if let mappedObject = JSONDeserializer<HZRecommendListModel>.deserializeModelArrayFrom(json: json["list"].description) {
-                    self.recommendList = mappedObject as? [HZRecommendListModel]
-                    self.collectionView.reloadData()
-                }
-            }
-        }
-    }
-    
-    
 }
 
-extension HZRecommendGuessLikeCell:UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource{
+extension HZHotAudioBooMainCell : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.recommendList?.count ?? 0
-   
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:HZGuessYouLikeCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZGuessYouLikeCellID, for: indexPath) as! HZGuessYouLikeCell
-        cell.recommendData = self.recommendList?[indexPath.row]
-        return cell;
+        let cell:HZHotAudioBookCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZHotAudioBookCellID, for: indexPath) as! HZHotAudioBookCell
+        cell.recommendData = self.recommendListData?[indexPath.row]
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.recommendGuessLikeCellItemClick(model: (self.recommendList?[indexPath.row])!)
+        delegate?.hotAudiobookCellItemClick(model: (self.recommendList?[indexPath.row])!)
     }
-    
     //每个分区的内边距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0);
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
     }
     
     //最小 item 间距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5;
+        return 0;
     }
     
     //最小行间距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5;
+        return 0;
     }
     
     //item 的尺寸
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width:(LBFMScreenWidth - 55) / 3,height:180)
+        return CGSize.init(width:LBFMScreenWidth - 30,height:120)
     }
 }

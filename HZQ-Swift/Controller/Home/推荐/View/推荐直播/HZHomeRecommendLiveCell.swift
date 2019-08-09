@@ -1,8 +1,8 @@
 //
-//  HZRecommendGuessLikeCell.swift
+//  HZHomeRecommendLiveCell.swift
 //  HZQ-Swift
 //
-//  Created by apple on 2019/8/6.
+//  Created by apple on 2019/8/9.
 //  Copyright © 2019 huzhiqiang. All rights reserved.
 //
 
@@ -10,45 +10,41 @@ import UIKit
 import SwiftyJSON
 import HandyJSON
 
-protocol HZRecommendGuessLikeCellDelegate:NSObjectProtocol {
-    func recommendGuessLikeCellItemClick(model:HZRecommendListModel)
-}
-class HZRecommendGuessLikeCell: UICollectionViewCell {
-    
-    weak var delegate : HZRecommendGuessLikeCellDelegate?
-    
-    private var recommendList:[HZRecommendListModel]?
-    
-    private let HZGuessYouLikeCellID = "HZGuessYouLikeCell"
-    
-    private lazy var changeBtn: UIButton = {
-       let button = UIButton.init(type:.custom)
-        button.setTitle("换一批", for: .normal)
-        button.setTitleColor(LBFMButtonColor, for: .normal)
+class HZHomeRecommendLiveCell: UICollectionViewCell {
+    private var live:[HZLiveModel]?
+    private let HZRecommendLiveCellID = "HZRecommendLiveCell"
+    private lazy var changeBtn:UIButton = {
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
+        button.setTitle("换一批", for: UIControl.State.normal)
+        button.setTitleColor(LBFMButtonColor, for: UIControl.State.normal)
         button.backgroundColor = UIColor.init(red: 254/255.0, green: 232/255.0, blue: 227/255.0, alpha: 1)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 5.0
-        button.addTarget(self, action: #selector(upDataBtnClick(button:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(updataBtnClick(button:)), for: UIControl.Event.touchUpInside)
         return button
     }()
     
-    private lazy var collectionView: UICollectionView = {
+    private lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout.init()
-        let collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
+        let collectionView = UICollectionView.init(frame:.zero, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.white
         collectionView.alwaysBounceVertical = true
-        collectionView.register(HZGuessYouLikeCell.self, forCellWithReuseIdentifier: HZGuessYouLikeCellID)
+        collectionView.register(HZRecommendLiveCell.self, forCellWithReuseIdentifier: HZRecommendLiveCellID)
         return collectionView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUpLayout()
+        setUpUI()
     }
     
-    func  setUpLayout(){
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setUpUI(){
         self.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { (make) in
             make.left.top.equalTo(15)
@@ -65,54 +61,40 @@ class HZRecommendGuessLikeCell: UICollectionViewCell {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    var recommendListData:[HZRecommendListModel]?{
+    var liveList:[HZLiveModel]? {
         didSet{
-            guard let model = recommendListData else {
-                return
-            }
-            self.recommendList = model
+            guard let model = liveList else { return }
+            self.live = model
             self.collectionView.reloadData()
         }
     }
     
-    
-    
-    @objc func upDataBtnClick(button:UIButton){
-        // 首页推荐接口请求
-        HZRecommendProvider.request(.changeGuessYouLikeList) { result in
+    // 更换一批按钮刷新cell
+    @objc func updataBtnClick(button:UIButton){
+        //首页推荐接口请求
+        HZRecommendProvider.request(.changeLiveList) { result in
             if case let .success(response) = result {
-                // 解析数据
-                let  data = try? response.mapJSON()
+                //解析数据
+                let data = try? response.mapJSON()
                 let json = JSON(data!)
-                if let mappedObject = JSONDeserializer<HZRecommendListModel>.deserializeModelArrayFrom(json: json["list"].description) {
-                    self.recommendList = mappedObject as? [HZRecommendListModel]
+                if let mappedObject = JSONDeserializer<HZLiveModel>.deserializeModelArrayFrom(json: json["data"]["list"].description) {
+                    self.live = mappedObject as? [HZLiveModel]
                     self.collectionView.reloadData()
                 }
             }
         }
     }
-    
-    
 }
 
-extension HZRecommendGuessLikeCell:UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource{
+extension HZHomeRecommendLiveCell:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.recommendList?.count ?? 0
-   
+        return self.live?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:HZGuessYouLikeCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZGuessYouLikeCellID, for: indexPath) as! HZGuessYouLikeCell
-        cell.recommendData = self.recommendList?[indexPath.row]
-        return cell;
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.recommendGuessLikeCellItemClick(model: (self.recommendList?[indexPath.row])!)
+        let cell:HZRecommendLiveCell = collectionView.dequeueReusableCell(withReuseIdentifier: HZRecommendLiveCellID, for: indexPath) as! HZRecommendLiveCell
+        cell.recommendliveData = self.live?[indexPath.row]
+        return cell
     }
     
     //每个分区的内边距
