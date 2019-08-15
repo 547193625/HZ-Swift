@@ -1,22 +1,18 @@
 //
-//  HZFindViewController.swift
+//  HZFindAttentionController.swift
 //  HZQ-Swift
 //
-//  Created by apple on 2019/8/1.
+//  Created by apple on 2019/8/14.
 //  Copyright © 2019 huzhiqiang. All rights reserved.
 //
 
 import UIKit
-import LTScrollView
 
-class HZFindViewController: UIViewController {
+class HZFindAttentionController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
     }
     
 

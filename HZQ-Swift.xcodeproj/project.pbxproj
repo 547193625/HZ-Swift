@@ -62,6 +62,25 @@
 		51B7ADE822FD520400FD9424 /* listenRecommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B7ADE522FD520400FD9424 /* listenRecommend.json */; };
 		51B7ADE922FD520400FD9424 /* listenSubscibe.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B7ADE622FD520400FD9424 /* listenSubscibe.json */; };
 		51B7ADEA22FD520400FD9424 /* listenMoreChannel.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B7ADE722FD520400FD9424 /* listenMoreChannel.json */; };
+		51F2871D2300FA0300BBCAC4 /* HZListenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2871C2300FA0300BBCAC4 /* HZListenAPI.swift */; };
+		51F2871F2300FF0600BBCAC4 /* HZListenSubscibeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2871E2300FF0600BBCAC4 /* HZListenSubscibeViewModel.swift */; };
+		51F287212300FF6B00BBCAC4 /* HZListenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F287202300FF6B00BBCAC4 /* HZListenModel.swift */; };
+		51F28723230111CD00BBCAC4 /* HZListenFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F28722230111CD00BBCAC4 /* HZListenFooterView.swift */; };
+		51F2872523013F2300BBCAC4 /* HZListenSubscibeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2872423013F2300BBCAC4 /* HZListenSubscibeCell.swift */; };
+		51F287272302499F00BBCAC4 /* HZListenChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F287262302499F00BBCAC4 /* HZListenChannelCell.swift */; };
+		51F2872923024B8400BBCAC4 /* HZOneKeyListenLTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2872823024B8400BBCAC4 /* HZOneKeyListenLTCell.swift */; };
+		51F2872B23024C0E00BBCAC4 /* HZListenChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2872A23024C0E00BBCAC4 /* HZListenChannelViewModel.swift */; };
+		51F2872D2302940200BBCAC4 /* HZListenRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2872C2302940200BBCAC4 /* HZListenRecommendCell.swift */; };
+		51F2872F2302A3AD00BBCAC4 /* HZListenRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2872E2302A3AD00BBCAC4 /* HZListenRecommendViewModel.swift */; };
+		51F2873923039F7400BBCAC4 /* HZFindAttentionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2873823039F7400BBCAC4 /* HZFindAttentionController.swift */; };
+		51F2874023039FC500BBCAC4 /* HZFindRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2873F23039FC500BBCAC4 /* HZFindRecommendController.swift */; };
+		51F2874223039FE500BBCAC4 /* HZFindDudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2874123039FE500BBCAC4 /* HZFindDudController.swift */; };
+		51F287462303A03400BBCAC4 /* FindAttention.json in Resources */ = {isa = PBXBuildFile; fileRef = 51F287432303A03400BBCAC4 /* FindAttention.json */; };
+		51F287472303A03400BBCAC4 /* FindDud.json in Resources */ = {isa = PBXBuildFile; fileRef = 51F287442303A03400BBCAC4 /* FindDud.json */; };
+		51F287482303A03400BBCAC4 /* FindRecommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 51F287452303A03400BBCAC4 /* FindRecommend.json */; };
+		51F2874A2303A59300BBCAC4 /* HZFindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F287492303A59300BBCAC4 /* HZFindModel.swift */; };
+		51F2874C2303F1FB00BBCAC4 /* HZFindHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2874B2303F1FB00BBCAC4 /* HZFindHeaderView.swift */; };
+		51F2874E2303F3DA00BBCAC4 /* HZFindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2874D2303F3DA00BBCAC4 /* HZFindCell.swift */; };
 		A78339745B362C01D8CF2114 /* Pods_HZQ_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5A991B4D5654ECB278F47 /* Pods_HZQ_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +165,25 @@
 		51B7ADE522FD520400FD9424 /* listenRecommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenRecommend.json; sourceTree = "<group>"; };
 		51B7ADE622FD520400FD9424 /* listenSubscibe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenSubscibe.json; sourceTree = "<group>"; };
 		51B7ADE722FD520400FD9424 /* listenMoreChannel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listenMoreChannel.json; sourceTree = "<group>"; };
+		51F2871C2300FA0300BBCAC4 /* HZListenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenAPI.swift; sourceTree = "<group>"; };
+		51F2871E2300FF0600BBCAC4 /* HZListenSubscibeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenSubscibeViewModel.swift; sourceTree = "<group>"; };
+		51F287202300FF6B00BBCAC4 /* HZListenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenModel.swift; sourceTree = "<group>"; };
+		51F28722230111CD00BBCAC4 /* HZListenFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenFooterView.swift; sourceTree = "<group>"; };
+		51F2872423013F2300BBCAC4 /* HZListenSubscibeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenSubscibeCell.swift; sourceTree = "<group>"; };
+		51F287262302499F00BBCAC4 /* HZListenChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenChannelCell.swift; sourceTree = "<group>"; };
+		51F2872823024B8400BBCAC4 /* HZOneKeyListenLTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZOneKeyListenLTCell.swift; sourceTree = "<group>"; };
+		51F2872A23024C0E00BBCAC4 /* HZListenChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenChannelViewModel.swift; sourceTree = "<group>"; };
+		51F2872C2302940200BBCAC4 /* HZListenRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenRecommendCell.swift; sourceTree = "<group>"; };
+		51F2872E2302A3AD00BBCAC4 /* HZListenRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZListenRecommendViewModel.swift; sourceTree = "<group>"; };
+		51F2873823039F7400BBCAC4 /* HZFindAttentionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindAttentionController.swift; sourceTree = "<group>"; };
+		51F2873F23039FC500BBCAC4 /* HZFindRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindRecommendController.swift; sourceTree = "<group>"; };
+		51F2874123039FE500BBCAC4 /* HZFindDudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindDudController.swift; sourceTree = "<group>"; };
+		51F287432303A03400BBCAC4 /* FindAttention.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FindAttention.json; sourceTree = "<group>"; };
+		51F287442303A03400BBCAC4 /* FindDud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FindDud.json; sourceTree = "<group>"; };
+		51F287452303A03400BBCAC4 /* FindRecommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FindRecommend.json; sourceTree = "<group>"; };
+		51F287492303A59300BBCAC4 /* HZFindModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindModel.swift; sourceTree = "<group>"; };
+		51F2874B2303F1FB00BBCAC4 /* HZFindHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindHeaderView.swift; sourceTree = "<group>"; };
+		51F2874D2303F3DA00BBCAC4 /* HZFindCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZFindCell.swift; sourceTree = "<group>"; };
 		61CEC67C3F9C0535A120E221 /* Pods-HZQ-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZQ-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZQ-Swift/Pods-HZQ-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,6 +374,11 @@
 			isa = PBXGroup;
 			children = (
 				5134D55022F2D7E000CA14CF /* HZFindViewController.swift */,
+				51F2873423039E9100BBCAC4 /* Controller */,
+				51F2873323039E8A00BBCAC4 /* API */,
+				51F2873223039E8000BBCAC4 /* Model */,
+				51F2873123039E7900BBCAC4 /* View */,
+				51F2873023039E5F00BBCAC4 /* ViewModel */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -575,9 +618,9 @@
 		51B7ADB922FD48CD00FD9424 /* 一键听 */ = {
 			isa = PBXGroup;
 			children = (
+				51B7ADC322FD495700FD9424 /* HZListenChannelController.swift */,
 				51B7ADCA22FD498500FD9424 /* ViewModel */,
 				51B7ADC922FD497D00FD9424 /* View */,
-				51B7ADC322FD495700FD9424 /* HZListenChannelController.swift */,
 			);
 			path = "一键听";
 			sourceTree = "<group>";
@@ -585,9 +628,9 @@
 		51B7ADBA22FD48D800FD9424 /* 听推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				51B7ADC122FD493D00FD9424 /* HZListenRecommendController.swift */,
 				51B7ADC822FD497300FD9424 /* ViewModel */,
 				51B7ADC722FD496E00FD9424 /* View */,
-				51B7ADC122FD493D00FD9424 /* HZListenRecommendController.swift */,
 			);
 			path = "听推荐";
 			sourceTree = "<group>";
@@ -595,9 +638,9 @@
 		51B7ADBB22FD48E200FD9424 /* 听订阅 */ = {
 			isa = PBXGroup;
 			children = (
+				51B7ADBF22FD492600FD9424 /* HZListenSubscibeController.swift */,
 				51B7ADC622FD496800FD9424 /* ViewModel */,
 				51B7ADC522FD495F00FD9424 /* View */,
-				51B7ADBF22FD492600FD9424 /* HZListenSubscibeController.swift */,
 			);
 			path = "听订阅";
 			sourceTree = "<group>";
@@ -613,6 +656,7 @@
 		51B7ADBD22FD48F600FD9424 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				51F287202300FF6B00BBCAC4 /* HZListenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -620,6 +664,7 @@
 		51B7ADBE22FD48FC00FD9424 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				51F2871C2300FA0300BBCAC4 /* HZListenAPI.swift */,
 				51B7ADE722FD520400FD9424 /* listenMoreChannel.json */,
 				51B7ADE522FD520400FD9424 /* listenRecommend.json */,
 				51B7ADE622FD520400FD9424 /* listenSubscibe.json */,
@@ -630,6 +675,8 @@
 		51B7ADC522FD495F00FD9424 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51F28722230111CD00BBCAC4 /* HZListenFooterView.swift */,
+				51F2872423013F2300BBCAC4 /* HZListenSubscibeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,6 +684,7 @@
 		51B7ADC622FD496800FD9424 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				51F2871E2300FF0600BBCAC4 /* HZListenSubscibeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -644,6 +692,7 @@
 		51B7ADC722FD496E00FD9424 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51F2872C2302940200BBCAC4 /* HZListenRecommendCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -651,6 +700,7 @@
 		51B7ADC822FD497300FD9424 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				51F2872E2302A3AD00BBCAC4 /* HZListenRecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -658,6 +708,8 @@
 		51B7ADC922FD497D00FD9424 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51F287262302499F00BBCAC4 /* HZListenChannelCell.swift */,
+				51F2872823024B8400BBCAC4 /* HZOneKeyListenLTCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -665,8 +717,117 @@
 		51B7ADCA22FD498500FD9424 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				51F2872A23024C0E00BBCAC4 /* HZListenChannelViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51F2873023039E5F00BBCAC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51F2873123039E7900BBCAC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51F2874B2303F1FB00BBCAC4 /* HZFindHeaderView.swift */,
+				51F2874D2303F3DA00BBCAC4 /* HZFindCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F2873223039E8000BBCAC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51F287492303A59300BBCAC4 /* HZFindModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51F2873323039E8A00BBCAC4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				51F287432303A03400BBCAC4 /* FindAttention.json */,
+				51F287442303A03400BBCAC4 /* FindDud.json */,
+				51F287452303A03400BBCAC4 /* FindRecommend.json */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		51F2873423039E9100BBCAC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51F2873723039ED400BBCAC4 /* 关注动态 */,
+				51F2873623039ECC00BBCAC4 /* 推荐动态 */,
+				51F2873523039EB500BBCAC4 /* 趣配音 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		51F2873523039EB500BBCAC4 /* 趣配音 */ = {
+			isa = PBXGroup;
+			children = (
+				51F2874123039FE500BBCAC4 /* HZFindDudController.swift */,
+			);
+			path = "趣配音";
+			sourceTree = "<group>";
+		};
+		51F2873623039ECC00BBCAC4 /* 推荐动态 */ = {
+			isa = PBXGroup;
+			children = (
+				51F2873F23039FC500BBCAC4 /* HZFindRecommendController.swift */,
+				51F2873E23039FA300BBCAC4 /* Model */,
+				51F2873D23039F9D00BBCAC4 /* View */,
+				51F2873C23039F9300BBCAC4 /* ViewModel */,
+			);
+			path = "推荐动态";
+			sourceTree = "<group>";
+		};
+		51F2873723039ED400BBCAC4 /* 关注动态 */ = {
+			isa = PBXGroup;
+			children = (
+				51F2873823039F7400BBCAC4 /* HZFindAttentionController.swift */,
+				51F2873B23039F8900BBCAC4 /* View */,
+				51F2873A23039F8100BBCAC4 /* ViewModel */,
+			);
+			path = "关注动态";
+			sourceTree = "<group>";
+		};
+		51F2873A23039F8100BBCAC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51F2873B23039F8900BBCAC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F2873C23039F9300BBCAC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51F2873D23039F9D00BBCAC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51F2873E23039FA300BBCAC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B2453FD0BD612B9C8565CC3F /* Frameworks */ = {
@@ -785,11 +946,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5134D52122F2CE8500CA14CF /* LaunchScreen.storyboard in Resources */,
+				51F287482303A03400BBCAC4 /* FindRecommend.json in Resources */,
 				51B7ADEA22FD520400FD9424 /* listenMoreChannel.json in Resources */,
+				51F287472303A03400BBCAC4 /* FindDud.json in Resources */,
 				51B7ADE822FD520400FD9424 /* listenRecommend.json in Resources */,
 				5134D51E22F2CE8500CA14CF /* Assets.xcassets in Resources */,
 				5134D51C22F2CE8400CA14CF /* Main.storyboard in Resources */,
 				51B7ADE922FD520400FD9424 /* listenSubscibe.json in Resources */,
+				51F287462303A03400BBCAC4 /* FindAttention.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,8 +1052,12 @@
 				51B7ADC222FD493D00FD9424 /* HZListenRecommendController.swift in Sources */,
 				5134D5BD22F3CA8B00CA14CF /* HZHomeVIPViewController.swift in Sources */,
 				5134D5CC22F4183D00CA14CF /* HZRecommendModel.swift in Sources */,
+				51F2872923024B8400BBCAC4 /* HZOneKeyListenLTCell.swift in Sources */,
 				5134D51922F2CE8400CA14CF /* ViewController.swift in Sources */,
+				51F2873923039F7400BBCAC4 /* HZFindAttentionController.swift in Sources */,
 				5134D5A022F2DF0300CA14CF /* WRNavigationBar.swift in Sources */,
+				51F2874E2303F3DA00BBCAC4 /* HZFindCell.swift in Sources */,
+				51F2872B23024C0E00BBCAC4 /* HZListenChannelViewModel.swift in Sources */,
 				5134D5A822F2DF7C00CA14CF /* HZHeader.swift in Sources */,
 				5134D5B522F3CA3500CA14CF /* HZHomeRecommendController.swift in Sources */,
 				5134D5C622F3E2CE00CA14CF /* HZRecommendViewModel.swift in Sources */,
@@ -902,9 +1070,12 @@
 				5145987422F9537200F71533 /* HZRecommendNewsCell.swift in Sources */,
 				5134D5C422F3D34800CA14CF /* HZHomeGuessYouLikeMoreViewController.swift in Sources */,
 				5145987E22FAA7D800F71533 /* HZHotAudioBookCell.swift in Sources */,
+				51F2871F2300FF0600BBCAC4 /* HZListenSubscibeViewModel.swift in Sources */,
 				5134D59F22F2DF0300CA14CF /* LBFMCustomLabel.swift in Sources */,
+				51F2874023039FC500BBCAC4 /* HZFindRecommendController.swift in Sources */,
 				5145987922F96EE400F71533 /* HZGuessYouLikeCell.swift in Sources */,
 				5134D5A122F2DF0300CA14CF /* WRCustomNavigationBar.swift in Sources */,
+				51F2872D2302940200BBCAC4 /* HZListenRecommendCell.swift in Sources */,
 				5134D55922F2D83600CA14CF /* HZPlayViewController.swift in Sources */,
 				5134D5B922F3CA6500CA14CF /* HZHomeBroadcastViewController.swift in Sources */,
 				5134D5A522F2DF0300CA14CF /* URefresh.swift in Sources */,
@@ -914,21 +1085,30 @@
 				5134D59122F2DEE300CA14CF /* HZNavigationController.swift in Sources */,
 				5134D5CA22F3E5BB00CA14CF /* HZRecommendHeaderCell.swift in Sources */,
 				5145987122F80AD900F71533 /* HZRecommendGridCell.swift in Sources */,
+				51F2874A2303A59300BBCAC4 /* HZFindModel.swift in Sources */,
 				5145988B22FD056300F71533 /* HZRecommendLiveCell.swift in Sources */,
 				5134D5A322F2DF0300CA14CF /* WRCycleScrollView.swift in Sources */,
+				51F287212300FF6B00BBCAC4 /* HZListenModel.swift in Sources */,
+				51F2874223039FE500BBCAC4 /* HZFindDudController.swift in Sources */,
+				51F2872F2302A3AD00BBCAC4 /* HZListenRecommendViewModel.swift in Sources */,
 				5145987B22FA657500F71533 /* HZRecommendHeaderView.swift in Sources */,
 				5145987722F96E0400F71533 /* HZRecommendGuessLikeCell.swift in Sources */,
 				5134D5A222F2DF0300CA14CF /* WRProxy.swift in Sources */,
+				51F2872523013F2300BBCAC4 /* HZListenSubscibeCell.swift in Sources */,
 				5134D5AE22F2E29300CA14CF /* HZIrregularityBasicContentView.swift in Sources */,
 				5134D5BB22F3CA7700CA14CF /* HZHomeLiveViewController.swift in Sources */,
 				51B7ADE422FD50C400FD9424 /* HZListenHeaderView.swift in Sources */,
+				51F2874C2303F1FB00BBCAC4 /* HZFindHeaderView.swift in Sources */,
+				51F2871D2300FA0300BBCAC4 /* HZListenAPI.swift in Sources */,
 				5145988022FABE6200F71533 /* HZHotAudioBooMainCell.swift in Sources */,
 				5134D5CE22F4217700CA14CF /* HZRecommendAPI.swift in Sources */,
 				51B7ADC422FD495700FD9424 /* HZListenChannelController.swift in Sources */,
 				5134D5AA22F2E1A600CA14CF /* HZBasicContentView.swift in Sources */,
 				5134D5A622F2DF0300CA14CF /* ReplicatorLayer.swift in Sources */,
+				51F287272302499F00BBCAC4 /* HZListenChannelCell.swift in Sources */,
 				5134D55322F2D80400CA14CF /* HZHomeViewController.swift in Sources */,
 				5134D5B722F3CA5200CA14CF /* HZHomeClassifyViewController.swift in Sources */,
+				51F28723230111CD00BBCAC4 /* HZListenFooterView.swift in Sources */,
 				5145988622FC0C2200F71533 /* HZOneKeyListenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
